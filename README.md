@@ -1,0 +1,2 @@
+# SPayMan
+spotify payment management
