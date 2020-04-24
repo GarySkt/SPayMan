@@ -11,9 +11,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(        
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.green,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: MyHomePage(title: 'SPayMan'),
     );
   }
 }
@@ -72,6 +72,7 @@ class _MyHomePageState extends State<MyHomePage> {
     setState(() {
       if(isAuthorized){
         _authorizedOrNot = "Authorized";
+        
       }else{
         _authorizedOrNot = "Not Authorized";
       }
@@ -93,21 +94,21 @@ class _MyHomePageState extends State<MyHomePage> {
             RaisedButton(
               onPressed: _checkBiometric,
               child: Text("Check Biometric"),
-              color: Colors.red,
+              color: Colors.green,
               colorBrightness: Brightness.light,
             ),
             Text("List of Biometric: ${_availableBiometricTypes.toString()}"),
             RaisedButton(
               onPressed: _getListOfBiometricTypes,
               child: Text("List of Biometric types"),
-              color: Colors.red,
+              color: Colors.green,
               colorBrightness: Brightness.light,
             ),
             Text("Authorized: $_authorizedOrNot"),
             RaisedButton(
               onPressed: _authorizeNow,
               child: Text("Authorize now"),
-              color: Colors.red,
+              color: Colors.green,
               colorBrightness: Brightness.light,
             )
           ],
